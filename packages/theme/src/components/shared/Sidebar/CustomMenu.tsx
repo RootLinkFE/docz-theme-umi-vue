@@ -123,7 +123,9 @@ const CustomMenu: React.SFC<CustomMenuProps> = ({ query }) => {
                     <Item selected={v.route === pathname} key={v.route}>
                       <Link to={v.route}>
                         <span>{v.name}</span>
-                        <Tag className={v.type}>{v.type === 'block' ? '区块' : '页面'}</Tag>
+                        {v.type && (
+                          <Tag className={v.type}>{v.type === 'block' ? '区块' : '页面'}</Tag>
+                        )}
                       </Link>
                     </Item>
                   ))}

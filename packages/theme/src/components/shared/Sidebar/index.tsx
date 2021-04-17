@@ -21,8 +21,8 @@ const sidebarText = get('colors.sidebarText')
 
 const Wrapper = styled.div<WrapperProps>`
   position: relative;
-  width: 316px;
-  min-width: 316px;
+  width: 286px;
+  min-width: 286px;
   min-height: 100vh;
   background: ${sidebarBg};
   transition: transform 0.2s, background 0.3s;
@@ -55,8 +55,8 @@ const Content = styled.div`
   left: 0;
   display: flex;
   flex-direction: column;
-  width: 316px;
-  min-width: 316px;
+  width: 286px;
+  min-width: 286px;
   height: 100%;
   max-height: 100vh;
 `
