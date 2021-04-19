@@ -103,7 +103,7 @@ var addImport = function addImport(importNode, demoFilePath) {
   return exportName;
 };
 
-export default (function (opts) {
+var plugin = function plugin(opts) {
   return function (tree, fileInfo) {
     var _ref3 = opts || {
       root: process.cwd()
@@ -133,4 +133,7 @@ export default (function (opts) {
       return tree;
     });
   };
-});
+};
+
+export default plugin;
+module.exports = plugin;

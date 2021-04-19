@@ -127,7 +127,7 @@ var addImport = function addImport(importNode, demoFilePath) {
   return exportName;
 };
 
-var _default = function _default(opts) {
+var plugin = function plugin(opts) {
   return function (tree, fileInfo) {
     var _ref3 = opts || {
       root: process.cwd()
@@ -159,4 +159,6 @@ var _default = function _default(opts) {
   };
 };
 
+var _default = plugin;
 exports.default = _default;
+module.exports = plugin;

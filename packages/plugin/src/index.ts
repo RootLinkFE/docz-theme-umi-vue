@@ -74,7 +74,7 @@ export interface PluginOpts {
   useCodeSandbox: boolean
 }
 
-export default (opts: PluginOpts) => (tree: any, fileInfo: any, ...args) => {
+const plugin = (opts: PluginOpts) => (tree: any, fileInfo: any, ...args) => {
   const { root, useCodeSandbox } = opts || {
     root: process.cwd(),
   }
@@ -102,3 +102,6 @@ export default (opts: PluginOpts) => (tree: any, fileInfo: any, ...args) => {
 
   return Promise.all(nodesPrm).then(() => tree)
 }
+
+export default plugin
+module.exports = plugin
