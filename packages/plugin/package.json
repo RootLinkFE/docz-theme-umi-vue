@@ -1,6 +1,6 @@
 {
   "name": "rehype-plugin-umiv",
-  "version": "1.0.4",
+  "version": "0.0.1",
   "description": "Rehype plugin used by docz",
   "license": "MIT",
   "main": "dist/index.js",
