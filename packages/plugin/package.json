@@ -3,9 +3,9 @@
   "version": "0.0.3",
   "description": "Rehype plugin used by docz",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "typings": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.esm.js",
+  "typings": "lib/index.d.ts",
   "files": [
     "lib/",
     "package.json",
