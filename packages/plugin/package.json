@@ -1,5 +1,5 @@
 {
-  "name": "rehype-plugin-umiv",
+  "name": "@roothub/rehype-plugin-umiv",
   "version": "0.0.4",
   "description": "Rehype plugin used by docz",
   "license": "MIT",
