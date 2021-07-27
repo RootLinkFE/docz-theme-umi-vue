@@ -56,6 +56,10 @@ const Tag = styled.span`
   &.page {
     background: #ff9900;
   }
+
+  &.component {
+    background: #108ee9;
+  }
 `
 
 interface CustomMenuProps {
@@ -71,6 +75,12 @@ interface ArrangedDoc {
 interface ItemProps {
   selected: boolean
   size?: 'default' | 'large'
+}
+
+const typeMap: any = {
+  component: '组件',
+  page: '页面',
+  block: '区块',
 }
 
 const CustomMenu: React.SFC<CustomMenuProps> = ({ query }) => {
@@ -124,7 +134,7 @@ const CustomMenu: React.SFC<CustomMenuProps> = ({ query }) => {
                       <Link to={v.route}>
                         <span>{v.name}</span>
                         {v.type && (
-                          <Tag className={v.type}>{v.type === 'block' ? '区块' : '页面'}</Tag>
+                          <Tag className={v.type}>{typeMap[v.type]}</Tag>
                         )}
                       </Link>
                     </Item>
